@@ -47,6 +47,8 @@ body {
   font-weight: 300;
 }
 
+
+
 .buttons  li a  {
   display: flex;
   flex-direction: column;
@@ -63,7 +65,20 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
+  animation-name: example;
+  animation-duration: 4s;
 }
+
+/* animação no botão quando é passado o mouse em cima */
+.buttons  li a {
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons  li a:hover {
+  transform: scale(1.05);
+}
+/*  */
+
 
 .footer {
   margin-top: 5.2rem;
@@ -71,3 +86,12 @@ body {
   gap: 2.9rem;
 }
 
+/* animação quando é passado o mouse em cima */
+.footer a img {
+  transition: 0.3s;
+}
+
+.footer a img:hover {
+  transform: translateY(-7px);
+}
+/*  */
